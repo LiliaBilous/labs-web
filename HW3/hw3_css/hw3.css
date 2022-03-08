@@ -1,0 +1,70 @@
+body {
+  background-image: url(../hw3_img/background.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 1366px;
+  height: 768px;
+  margin: 0px auto;
+  font-family: "Verdana";
+  color: white;
+}
+header {
+  height: 45px;
+  width: 1080px;
+  margin: 45px 120px 20px 120px;
+}
+.logo {
+  text-decoration: none;
+  float: left;
+}
+.logo_text {
+  text-transform: uppercase;
+  display: inline-block;
+  font-weight: bold;
+  margin-left: 10px;
+  color: white;
+}
+.Milan {
+  font-size: 29px;
+}
+.Holidays {
+  font-size: 18px;
+}
+.contacts {
+  text-align: right;
+  float: right;
+  font-size: 18px;
+  line-height: 1.167;
+}
+section {
+  margin: 35px 120px;
+}
+.tour {
+  float: left;
+  width: 33.33%;
+  padding-bottom: 20px;
+  padding-top: 20px;
+}
+img {
+  margin-left: 30px;
+}
+.name_tour {
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  color: white;
+}
+a:link {
+  text-decoration: none;
+}
+.tours::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+footer {
+  font-size: 12px;
+  text-align: center;
+  padding-bottom: 20px;
+  padding-top: 20px;
+}
