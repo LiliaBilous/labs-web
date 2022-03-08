@@ -1,0 +1,74 @@
+body {
+  height: 1626px;
+  width: 1280px;
+  margin: 0px auto;
+}
+.navbar {
+  text-align: center;
+  margin-top: 40px;
+  margin-left: 320px;
+  margin-right: 385px;
+}
+.navbar a {
+  float: left;
+  display: block;
+  margin-left: 60px;
+  font-size: 18px;
+  font-family: "Roboto";
+  color: #16a085;
+  text-transform: uppercase;
+}
+img {
+  margin-top: 36px;
+  width: 1280px;
+  margin-left: auto;
+}
+.background {
+  top: 868px;
+  background-color: #f5f6f7;
+  padding-top: 56px;
+  padding-bottom: 94px;
+}
+h1 {
+  font-family: "Roboto";
+  font-size: 22px;
+  color: #373737;
+  text-align: center;
+  text-transform: uppercase;
+  line-height: 1.2;
+  margin: 0px 340px 36px 360px;
+}
+p {
+  font-size: 16px;
+  font-family: "Roboto";
+  color: #373737;
+  line-height: 1.625;
+  word-spacing: 1.5px;
+  text-align: center;
+  margin: 0px 110px 20px 110px;
+  letter-spacing: 2px;
+  font-weight: bold;
+}
+.button {
+  background: #16a085;
+  border-radius: 3px;
+  width: 120px;
+  font-size: 12px;
+  text-align: center;
+  text-transform: uppercase;
+  font-family: "Gotham Rounded";
+  color: rgb(255, 253, 253);
+  font-weight: bold;
+  letter-spacing: 1.8px;
+  padding: 23px 40px;
+  margin: 40px 560px 90px 520px;
+}
+
+footer {
+  font-size: 16px;
+  font-family: "Roboto";
+  color: rgb(55, 55, 55);
+  text-align: right;
+  padding: 40px 100px 40px 0px;
+  letter-spacing: 1.8px;
+}
