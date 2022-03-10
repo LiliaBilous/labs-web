@@ -13,9 +13,13 @@ header {
   width: 1080px;
   margin: 45px 120px 20px 120px;
 }
-.logo {
+.logo_img {
   text-decoration: none;
   float: left;
+  border: 1px;
+}
+.logo:hover .logo_img {
+  content: url(../hw3_img/logo_hover.png);
 }
 .logo_text {
   text-transform: uppercase;
@@ -23,6 +27,9 @@ header {
   font-weight: bold;
   margin-left: 10px;
   color: white;
+}
+.logo:hover .logo_text {
+  color: #f26522;
 }
 .Milan {
   font-size: 29px;
@@ -40,20 +47,81 @@ section {
   margin: 35px 120px;
 }
 .tour {
+  box-sizing: border-box;
   float: left;
   width: 33.33%;
-  padding-bottom: 20px;
-  padding-top: 20px;
+  margin: 25px 0px;
 }
 img {
   margin-left: 30px;
+  border: 2px solid;
+  border-image-slice: 1;
+  border-image-source: linear-gradient(white, black);
+  border-bottom: 0px solid;
 }
 .name_tour {
   text-align: center;
-  padding-top: 20px;
-  padding-bottom: 20px;
   color: white;
+  margin-left: 30px;
+  margin-top: 20px;
 }
+.overflow {
+  overflow: hidden;
+  position: relative;
+  height: 203px;
+}
+.hidden {
+  position: absolute;
+  color: white;
+  background-color: #f26522;
+  width: 312px;
+  height: 62px;
+  margin-left: 30px;
+  margin-top: 0px;
+  transition: 1s;
+}
+.tour:hover .hidden {
+  margin-top: -63px;
+}
+.price span {
+  display: block;
+  font-size: 10px;
+  margin-bottom: 3px;
+}
+.price {
+  float: left;
+  font-size: 20px;
+  margin-top: 15px;
+  margin-left: 21px;
+}
+.view {
+  float: right;
+  font-size: 14px;
+  margin-right: 18px;
+  margin-top: 35px;
+}
+/* .hidden:hover {
+  visibility: visible;
+  opacity: 1;
+  width: 261px;
+  height: 63px;
+  background-color: #f26522;
+  color: white;
+  animation: moveToUp 2s ease-in forwards; 
+  animation-delay: 1000ms;
+} */
+/* @keyframes moveToUp {
+  0% {
+    transform: translateY(0px);
+  }
+  100% {
+    transform: translateY(-65px);
+  }
+} */
+.tour:hover .name_tour {
+  color: #f26522;
+}
+
 a:link {
   text-decoration: none;
 }
@@ -62,9 +130,10 @@ a:link {
   clear: both;
   display: table;
 }
+
 footer {
   font-size: 12px;
   text-align: center;
   padding-bottom: 20px;
-  padding-top: 20px;
+  padding-top: 40px;
 }
