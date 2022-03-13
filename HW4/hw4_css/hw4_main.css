@@ -1,0 +1,51 @@
+body {
+  background-image: url(../hw4_img/backgraund.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 1366px;
+  height: 787px;
+  margin: 0px auto;
+  font-family: "Verdana";
+  color: white;
+}
+a {
+  text-decoration: none;
+  color: white;
+}
+.header_fon {
+  top: 0;
+  left: 0;
+  height: 50px;
+  background: rgba(0, 0, 0, 0.4);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.name {
+  font-weight: bold;
+  display: flex;
+}
+.icons {
+  background: url(../hw4_img/icons.png) no-repeat;
+  height: 20px;
+  display: flex;
+  justify-content: right;
+}
+.calendar {
+  background-position: 0 0;
+  width: 20px;
+}
+.forum {
+  background-position: 60px 0;
+  width: 28px;
+}
+.journey {
+  background-position: 120px 0;
+  width: 20px;
+}
+.line {
+  justify-content: right;
+}
+.welcome {
+  justify-content: right;
+}
