@@ -30,6 +30,7 @@ section {
 }
 .name:hover {
   color: #3cb878;
+  transition: all 1s ease-out;
 }
 .right {
   display: flex;
@@ -52,6 +53,7 @@ a.icon {
 a.icon:hover {
   background-image: url(../hw4_img/hover.png);
   background-repeat: no-repeat;
+  transition: all 1s ease-out;
 }
 .calendar {
   background-position: left top;
@@ -71,7 +73,7 @@ a.log {
 }
 a.log:hover {
   text-decoration: underline;
-}
+  }
 a.sign {
   color: #3cb878;
 }
@@ -199,10 +201,6 @@ form {
 }
 .field {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  align-content: center;
-  justify-content: flex-start;
   margin: 5px auto;
   color: #eaeaea;
   width: 310px;
@@ -212,17 +210,21 @@ form {
   border: 2px solid #eaeaea;
   border-radius: 5px;
 }
-field:active {
-  border: 2px solid white;
+.field:focus {
+  outline: none;
+  border: 2px solid;
+  border-color: rgba(253, 255, 254, 0.1);
   color: black;
-  box-shadow: #848484;
+  background-color: white;
+  box-shadow: 5px 5px 15px 0px #d6d6d6;
 }
-.checkbox {
+/* .checkbox {
   display: flex;
   justify-content: left;
-}
-input.check:checked {
-  color: #3cb878;
+  overflow: hidden;
+} */
+.checkbox {
+  margin-top: 20px;
 }
 label {
   display: flex;
@@ -233,14 +235,36 @@ label {
 }
 .check {
   display: flex;
-  flex-direction: row;
-  align-items: flex-start;
-  margin: 10px;
+  flex-direction : row;
+  align-items : flex-start;
+  
+}
+input[type="checkbox"] {
+  -webkit-appearance: none;
+  appearance: none;
+  background-color: #fff;
+  margin-right: 10px;
   height: 20px;
   width: 20px;
   border: 1px solid #eaeaea;
   border-radius: 2px;
-  border-color: transparent;
+  display: grid;
+  place-content: center;
+}
+input[type="checkbox"]::before {
+  content: "";
+  width: 0.65em;
+  height: 0.65em;
+  transform: scale(0);
+  transition: 120ms transform ease-in-out;
+  box-shadow: inset 1em 1em var(#3cb878);
+  background-color: #3cb878;
+  transform-origin: bottom left;
+  clip-path: polygon(14% 44%, 0 65%, 50% 100%, 100% 16%, 80% 0%, 43% 62%);
+}
+
+input[type="checkbox"]:checked::before {
+  transform: scale(1);
 }
 a.terms {
   color: #3cb878;
