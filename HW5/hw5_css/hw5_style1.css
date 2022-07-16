@@ -99,6 +99,13 @@ button {
     font-size: 16px;
     font-weight: bold;
     text-transform: uppercase;
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+button:hover {
+    background-color: #fafafa;
+    color: #484848;
+    border: 1px solid #484848;
 }
 .but-grey {
     background-color: #484848;
@@ -110,7 +117,7 @@ td {
     position: relative;
     overflow: hidden;
 }
-.box-shadow-left::before {
+.box-shadow::before {
     content: "";
     position: absolute;
     height: 100%;
@@ -120,11 +127,5 @@ td {
     box-shadow: 0 0 4px rgb(0 0 0 / 50%);
 }
 .box-shadow-right::before {
-    content: "";
-    position: absolute;
-    height: 100%;
-    top: 0;
-    width: 1px;
-    right: -1px;
-    box-shadow: 0 0 4px rgb(0 0 0 / 50%);
+    left: 100%;
 }
