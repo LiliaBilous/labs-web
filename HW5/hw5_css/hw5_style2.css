@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Arimo:wght@400;700&display=swap');
+
+section {
+    font-family: Arimo;
+    background-color: #3a4965;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-transform: uppercase;
+}
+table {
+    border-collapse: collapse;
+    box-shadow: 0 0 4px rgb(0 0 0 / 50%);
+}
+thead {
+    background-color: #fafafa;
+}
+i {
+    color: #848484;
+    padding-bottom: 8px;
+}
+.first-row {
+    color: #484848; 
+}
+.choose {
+    font-size: 14px;
+    font-weight: bold;
+    padding-bottom: 8px;
+}
+.plan {
+    font-size: 20px;
+    font-weight: bold;
+}
+.icons {
+    width: 160px;
+    padding: 20px;
+    font-weight: bold;
+    font-size: 20px;
+}
+.dark-background {
+    background-color: #e3e3e3;
+}
+.light-background {
+    background-color: #f4f4f4;
+}
+tbody {
+    color: #848484;
+    font-size: 16px;
+}
+.green {
+    background-color: #89c331;
+    color: white;
+    font-weight: bold;
+    padding: 15px;
+}
+.title{
+    font-size: 24px;
+}
+.price {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 20px;    
+}
+.dollar {
+    font-size: 36px;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: center;
+}
+.cents {
+    font-size: 18px;
+}
+.payment {
+    font-size: 14px;
+    padding-left: 5px;
+}
+.red {
+    background-color: #f04a56;
+    color: white;
+    font-weight: bold;
+    padding: 15px;
+}
+.dark-green {
+    background-color: #20807c;
+    color: white;
+    font-weight: bold;
+    padding: 15px;
+}
+button {
+    height: 40px;
+    width: 144px;
+    background-color: #414141;
+    color: white;
+    border: 1px solid transparent;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+button:hover {
+    background-color: #4b602b;
+    border: 1px solid black;
+    
+}
+td {
+    text-align: center;
+    vertical-align: middle;
+    box-shadow: 2px -2px 2px rgb(166 162 162 / 50%);
+}
+
