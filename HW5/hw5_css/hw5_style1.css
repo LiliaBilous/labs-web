@@ -11,6 +11,7 @@ section {
 }
 table {
     border-collapse: collapse;
+    box-shadow: 0 0 4px rgb(0 0 0 / 50%);
 }
 thead {
     background-color: #fafafa;
