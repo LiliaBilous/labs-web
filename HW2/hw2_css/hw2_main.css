@@ -2,9 +2,9 @@
   font-family: "Myriad Pro";
   src: url("MyriadPro-Regular.eot");
   src: local("Myriad Pro Regular"), local("MyriadPro-Regular"),
-    url("MyriadPro-Regular.eot?#iefix") format("embedded-opentype"),
-    url("MyriadPro-Regular.woff") format("woff"),
-    url("MyriadPro-Regular.ttf") format("truetype");
+    url("MyrianPro/MyriadPro-Regular.eot") format("embedded-opentype"),
+    url("MyrianPro/MyriadPro-Regular.woff") format("woff"),
+    url("MyrianPro/MyriadPro-Regular.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
 }
