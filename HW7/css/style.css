@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+body {
+    width: 100%;
+    height: 100%;
+    background-color: rgb(20, 20, 20);
+    overflow: hidden;
+    font-family: 'Roboto', sans-serif;
+    margin: 50% 0 0 0;
+    position: relative;
+}
+.wrapper {
+    position: relative;
+    perspective: 550px;
+}
+.animation-block {
+    height: 100vh;
+    width: 125vw;
+    font-size: 6em;
+    font-weight: 600;
+    letter-spacing: 5px;
+    line-height: 1.5;
+    text-align: justify;
+    color: rgb(244, 210, 18);
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    animation: front-end-wars 30s infinite linear;
+}
+h1, h2 {
+    font-size: 1em;
+    text-align: center;
+    text-transform: uppercase;
+}
+.first-paragraf {
+    text-align: left;
+}
+
+@keyframes front-end-wars {
+    from {
+        top: 0;
+        transform: translateZ(0) rotateX(16deg);
+    }
+    to {
+        top: -6000px;
+        transform: translateZ(-2500px) rotateX(21deg);
+    }
+}
