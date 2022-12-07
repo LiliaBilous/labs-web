@@ -3,7 +3,7 @@
  *:after {
      box-sizing: border-box;
  }
- .main_container {
+ .wrapper {
     font-family: 'Open Sans', sans-serif;
 }
 /* Flexbox */
