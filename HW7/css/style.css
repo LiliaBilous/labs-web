@@ -1,46 +1,78 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
-
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
 body {
     width: 100%;
     height: 100%;
     background-color: rgb(20, 20, 20);
     overflow: hidden;
     font-family: 'Roboto', sans-serif;
-    margin: 50% 0 0 0;
     position: relative;
+    
+}
+body::after {
+    content: '';
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 50%;
+    background: linear-gradient(180deg, rgba(20, 20, 20, 1) 40%, rgba(20, 20, 20, 0) 100%);
 }
 .wrapper {
+    display: flex;
+    top: 100vh;
     position: relative;
-    perspective: 550px;
+    perspective: 600px;
 }
 .animation-block {
-    height: 100vh;
-    width: 125vw;
-    font-size: 6em;
-    font-weight: 600;
-    letter-spacing: 5px;
+    font-size: 5em;
+    font-weight: 700;
+    letter-spacing: 6px;
     line-height: 1.5;
     text-align: justify;
+
     color: rgb(244, 210, 18);
+    height: 10em;
     position: relative;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start;
     animation: front-end-wars 30s infinite linear;
 }
 h1, h2 {
-    font-size: 1em;
+    line-height: 2;
     text-align: center;
     text-transform: uppercase;
+    padding-bottom: 50px;
+}
+p {
+    word-spacing: 5px;
 }
 .first-paragraf {
-    text-align: left;
+    margin-top: 100px;
+}
+.player {
+    overflow: visible; 
+    position: fixed; 
+    left: 0; 
+    bottom: 20px; 
+    width: 300px; 
+    height: 55px;
+    filter: opacity(20%);
+}
+.player:hover {
+    filter: opacity(70%);
+    transition: 50ms;
 }
 
 @keyframes front-end-wars {
     from {
         top: 0;
-        transform: translateZ(0) rotateX(16deg);
+        transform: translateZ(0) rotateX(18deg);
     }
     to {
         top: -6000px;
