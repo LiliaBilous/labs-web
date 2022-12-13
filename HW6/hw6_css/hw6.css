@@ -1,7 +1,7 @@
  *,
  *:before,
  *:after {
-     box-sizing: border-box;
+    box-sizing: border-box;
  }
  .wrapper {
     font-family: 'Open Sans', sans-serif;
@@ -16,11 +16,19 @@
     justify-content: space-evenly;
     color: white;
 }
-.logo {
+.header-logo {
     flex: 2;
     display: flex;
     flex-direction: row;
     align-items: center;
+}
+.wrapper-logo {
+    width: 70px;
+    height: 70px;
+    background-color: #1a1d20;
+}
+.header-icon {
+    padding: 20px;
 }
 .logo-text {
     padding-left: 5px;
@@ -33,20 +41,12 @@ nav {
     display: flex;
     justify-content: center;
 }
-.main-menu {
+.header-menu {
     margin: 0 20px;
     font-size: 15px;
     text-transform: uppercase;
 }
-.side {
-    width: 70px;
-    height: 70px;
-    background-color: #1a1d20;
-}
-.icon {
-    padding: 20px;
-}
-.search {
+.header-search {
     background-color: #1a1d20;
     padding: 5px;
 }
@@ -66,7 +66,7 @@ nav {
     width: 100%;
     padding: 10px 0;
 }
-.header-title {
+.main-title {
     font-size: 27px;
     text-transform: uppercase;
     text-align: center;
@@ -93,7 +93,7 @@ button {
 .articles {
     background-color: #14b9d5;
 }
-.pop-posts-list {
+.pop-posts {
     background-color: #f2f2f2;
     height: 1028px;
 }
@@ -278,4 +278,12 @@ footer {
     grid-template-rows: 1fr;
     grid-template-columns: 0.4fr 0.4fr;
     justify-items: center;
+}
+button:hover {
+    transition: all 0.75s ease;
+    color: #1a1d20;
+}
+nav a:hover{
+    color: #18b4cf;
+    transition: all 0.75s ease;
 }

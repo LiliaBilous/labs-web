@@ -142,9 +142,10 @@ button {
     cursor: pointer;
 }
 button:hover {
-    background-color: #4b602b;
-    border: 1px solid black;
-    
+    background-color: #767676;
+    border: 1px solid #414141;
+    color: #414141;
+    transition: all ease 1.5s;
 }
 td {
     text-align: center;
