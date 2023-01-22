@@ -38,7 +38,7 @@
         url('../fonts/arimo-v27-latin-700.svg#Arimo') format('svg');
     /* Legacy iOS */
 }
-section {
+.main-container {
     font-family: Arimo;
     background-color: #3a4965;
     display: flex;
@@ -49,6 +49,7 @@ section {
     text-transform: uppercase;
 }
 table {
+    margin: auto;
     border-collapse: collapse;
     box-shadow: 0 0 4px rgb(0 0 0 / 50%);
 }
