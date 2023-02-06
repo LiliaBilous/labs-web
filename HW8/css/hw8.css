@@ -158,41 +158,109 @@ body {
     row-gap: 7rem;
     width: 70%;
 }
-.meet {}
+.meet {
+    background-color: white;
+    width: 100%;
+    padding: 3rem 6.5rem;
+}
 
-.meet__title {}
+.meet__title {
+    margin-bottom: 1.5rem;
+}
 
-.meet__subtitle {}
+.meet__subtitle {
+    margin-bottom: 3rem;
+}
 
-.meet__row {}
+.meet__row {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
 
-.intro-emploee {}
+.intro-emploee {
+    display: grid;
+    grid-auto-rows: 2fr 1fr;
+    justify-items: center;
+    align-items: center;
+}
 
 .intro-emploee__card {}
 
-.intro-emploee__discarb {}
+.intro-emploee__discarb {
+    max-width: 18rem;
+    text-align: center;
+    line-height: 2rem;
+}
 
-.slogan {}
+.testimonails {
+    background: no-repeat center / cover url(../img/bg3.jpg);
+    height: 40rem;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+}
+.testimonails-body {
+    background-color: rgba(0, 0, 0, 0.7);
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.testimonails__title {
+}
+.testimonails__subtitle {
+    margin: 1.25rem auto;
+}
+.subtitle {
+}
+.testimonails__quote {
+    margin: 1.25rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+.quote {
+    max-width: 55rem;
+    line-height: 1.75rem;
+    text-align: center;
+}
+.author {
+    font-weight: 700;
+    font-style: italic;
+    margin: 1.5625rem;
+}
 
-.slogan__title {}
+.why {
+    margin: 6.25rem;
+}
 
-.slogan__subtitle {}
+.why__title {
+    margin-bottom: 1.25rem;
+}
 
-.slogan__quote {}
+.why__subtitle {
+    margin-bottom: 3.125rem;
+}
 
-.quote {}
+.why__formula {
+    max-width: 60rem;
+    font-size: 1.875rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    line-height: 3rem;
+    text-align: center;
+}
 
-.author {}
-
-.why {}
-
-.why__title {}
-
-.why__subtitle {}
-
-.why__formula {}
-
-.footer {}
+.footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 6.25rem;
+}
 
 .footer__copyright {}
 
